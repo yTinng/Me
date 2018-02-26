@@ -1,0 +1,204 @@
+body{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 50px;
+	background-color: #f4f4f4;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.light-title{
+	border-left: 10px solid orange;
+  padding-left: 30px;
+}
+.popover{
+	color: #000;
+}
+.clearfix{
+	content: '';
+	overflow: hidden;
+	display: block;
+	clear:both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.hide{
+	display: none;
+}
+.container{
+	width: 840px;
+	margin: 0 auto;
+}
+.header{
+	/*height: 508px;*/
+	padding: 92px 0;
+	background: url(../images/resume_pattern.svg) no-repeat;
+	background-size: cover;
+	background-color: #424242;
+	color: #fff;
+	margin-bottom: 25px;
+}
+.head-container{
+	width: 502px;
+	margin: 0 auto;
+	text-align: center;
+}
+.header .avatar{
+	width: 92px;
+	height: 92px;
+	overflow: hidden;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #ccc;
+	border: 3px solid #fff;
+	box-shadow:0 3px 6px rgba(0,0,0,0.15);
+}
+.header .avatar img{
+	width: 100%;
+	height: 100%;
+}
+.head-container h1{
+	margin: 54px 0 25px 0;
+	font-size: 34px;
+}
+.head-container p{
+	font-size: 20px;
+	line-height: 1.9;
+	margin-bottom: 70px;
+}
+.icon-link a{
+	margin-right: 37px;
+	background-color: rgba(0,0,0,0);
+	border:0;
+	cursor: pointer;
+}
+.icon-link a:focus{
+	outline: none;
+}
+.container{
+	width: 840px;
+	margin: 0 auto;
+}
+.row{
+	margin-left: -13px;
+	margin-right: -13px;
+}
+.content .card{
+	padding: 10px;
+	width: 100%;
+	/*margin: 0 7.5px;*/
+	margin-bottom: 15px;
+	display: inline-block;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.content .card .card-img{
+	width: 100%;
+	/*height: 188px;*/
+}
+.content .card .card-img img{
+	width: 100%;
+}
+.content .card h6{
+	margin: 20px 0 10px 0;
+	color: #b7b7b7;
+	font-weight: 400;
+}
+.content .card.continued{
+	text-align: center;
+	width: 270px;
+	padding: 119px 0 119px 0;
+	vertical-align: bottom;
+}
+.content .card.continued h6{
+	margin:0;
+	vertical-align: top;
+}
+.module-card .row{
+	margin-top: 10px;
+	margin-bottom: 77px;
+	background-color: #fff;
+	padding-bottom: 22px;
+	margin-left: -5.5px;
+	margin-right: -5.5px;
+	border-radius: 4px; 
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.module-card .detail{
+	padding-top: 30px;
+}
+.module-card .detail h4{
+	border-left: 10px solid #35A691;
+	padding-left: 30px;
+}
+.module-card .detail ul{
+	padding-left: 30px;
+}
+.module-card .detail li{
+	font-size: 14px;
+	color: #707070;
+	line-height: 2;
+}
+.module-card .experience{
+	margin-bottom: 44px;
+}
+.module-card .experience .ex-detail{
+	margin-top: 25px;
+}
+.module-card .experience p{
+	margin: 0px 0 6px 0px;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #707070;
+}
+.module-card .experience p span{
+	margin-right: 10px;
+}
+.module-card .more{
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	color: #707070;
+}
+footer{
+	text-align: center;
+	font-size: 14px;
+	color: #707070;
+}
+@media (max-width: 768px){
+	.head-container{
+		width: auto;
+		margin: 0 100px;
+		text-align: center;
+	}
+	.container{
+		width: auto;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 480px){
+	.head-container{
+		width: auto;
+		margin: 0 10px;
+		text-align: center;
+	}
+	.container{
+		width: auto;
+		margin: 0 auto;
+	}
+}

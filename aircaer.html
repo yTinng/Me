@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>resume</title>
+	<link  rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/pages.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+</head>
+<body>
+		<div class="fix-pages">
+			<a href="index.html"><img src="images/icon/index.svg" alt=""> 首页</a>
+			<a href=""><img src="images/icon/left.svg" alt=""> 上一页</a>
+			<a  href="">下一页 <img src="images/icon/right.svg" alt=""></a>
+		</div>
+	<section class="header header-pages">
+		<div class="head-container">
+			<h1>Aircaer</h1>
+			<span class="line">
+			</span>
+			<p>2017.07 - 2017.08</p>
+		</div>
+	</section>
+	<section class="content app-content">
+		<div class="slick-box">
+			<div><img src="images/aircaer/aircaer.jpeg" alt=""></div>
+			<div><img src="images/aircaer/aircaer-phone.jpeg" alt=""></div>
+			<div><img src="images/aircaer/aircaer1.jpeg" alt=""></div>
+			<div><img src="images/aircaer/aircaer-phone2.jpeg" alt=""></div>
+			<div><img src="images/aircaer/aircaer-phone3.jpeg" alt=""></div>
+			<div><img src="images/aircaer/aircaer-phone4.jpeg" alt=""></div>
+		</div>
+	</section>
+	<section class="module-card-pages module-card container ">
+		<div class="row experience">
+			<div class="detail">
+			<h4>项目网址</h4>
+			<div class="ex-detail">
+				<p><a href="https://www.airacer.com/">https://www.airacer.com/</a></p>
+			</div>
+		</div>
+		<div class="detail">
+			<h4>项目类型</h4>
+			<div class="ex-detail">
+				<p>纯静态响应式页面</p>
+			</div>
+		</div>
+		<div class="detail">
+			<h4>技术使用</h4>
+			<div class="ex-detail">
+				<p>slick，materializecss</p>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="pages container">
+		<div class="clearfix">
+			<span class="left btn">< 上一页</span>
+			<span class="right btn">下一页 ></span>
+		</div>
+	</section> -->
+	<footer>
+		 © Tinng | Good Good Study,Day Day Up 😝
+	</footer>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+
+	<script type="text/javascript">
+		$('.more').on('click',function(){
+			$('.ex-hide').slideDown();
+			$('.more-hide').slideUp()
+		});
+
+		$('.slick-box').slick({
+			dots: true,
+		  infinite: true,
+		  speed: 2000,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+  		// autoplaySpeed: 00,
+  		adaptiveHeight: true
+		});
+	</script>
+</body>
+</html>
