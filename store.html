@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tinng</title>
+  <link  rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+</head>
+<body>
+    <div class="fix-pages">
+      <a href="index.html"><img src="images/icon/index.svg" alt=""> 首页</a>
+      <a href="welle.html"><img src="images/icon/left.svg" alt=""> 上一页</a>
+      <!-- <a  href="gendi.html">下一页 <img src="images/icon/right.svg" alt=""></a> -->
+    </div>
+  <section class="header header-pages">
+    <div class="head-container">
+      <h1>英选Store</h1>
+      <span class="line">
+      </span>
+      <p>2018.09</p>
+    </div>
+  </section>
+  <section class="content app-content">
+    <div class="slick-box">
+      <div><a href="images/store/store1.jpeg" data-lightbox="roadtrip"><img src="images/store/store1.jpeg" alt=""></a></div>
+      <div><a href="images/store/store2.jpeg" data-lightbox="roadtrip"><img src="images/store/store2.jpeg" alt=""></a></div>
+      <div><a href="images/store/store3.jpeg" data-lightbox="roadtrip"><img src="images/store/store3.jpeg" alt=""></a></div>
+      <div><a href="images/store/store6.jpeg" data-lightbox="roadtrip"><img src="images/store/store6.jpeg" alt=""></a></div>
+      <div><a href="images/store/store7.jpeg" data-lightbox="roadtrip"><img src="images/store/store7.jpeg" alt=""></a></div>
+      <div><a href="images/store/store8.jpeg" data-lightbox="roadtrip"><img src="images/store/store8.jpeg" alt=""></a></div>
+    </div>
+  </section>
+  <section class="module-card-pages module-card container ">
+    <div class="row experience">
+      <div class="detail">
+      <h4>项目网址</h4>
+      <div class="ex-detail">
+        <p><a href="http://store.yingxuan.io/">http://store.yingxuan.io/</a></p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>项目类型</h4>
+      <div class="ex-detail">
+        <p>rails框架项目</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>项目简介</h4>
+      <div class="ex-detail">
+        <p>英选store是一个英选小程序服务的网站介绍，集合了小程序服务的案例，套餐，详情介绍等功能</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>技术使用</h4>
+      <div class="ex-detail">
+        <p>ruby,rails</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>主要负责模块</h4>
+      <div class="ex-detail">
+        <p>独立负责后端代码的搭建和代码开发及mina部署工作</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="pages container">
+    <div class="clearfix">
+      <span class="left btn">< 上一页</span>
+      <span class="right btn">下一页 ></span>
+    </div>
+  </section> -->
+  <footer>
+     © Tinng | Good Good Study,Day Day Up 😝
+  </footer>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
+  <script type="text/javascript">
+    $('.more').on('click',function(){
+      $('.ex-hide').slideDown();
+      $('.more-hide').slideUp()
+    });
+
+    $('.slick-box').slick({
+      dots: true,
+      infinite: true,
+      speed: 1500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      adaptiveHeight: true
+    });
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel':   "%1 / %2",
+      fitImagesInViewport: true,
+      alwaysShowNavOnTouchDevices: true
+    })
+  </script>
+</body>
+</html>

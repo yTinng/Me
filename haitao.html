@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tinng</title>
+  <link  rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+</head>
+<body>
+    <div class="fix-pages">
+      <a href="index.html"><img src="images/icon/index.svg" alt=""> 首页</a>
+      <a href="sc.html"><img src="images/icon/left.svg" alt=""> 上一页</a>
+      <!-- <a  href="gendi.html">下一页 <img src="images/icon/right.svg" alt=""></a> -->
+    </div>
+  <section class="header header-pages">
+    <div class="head-container">
+      <h1>海淘订单管理项目</h1>
+      <span class="line">
+      </span>
+      <p>2018.10</p>
+    </div>
+  </section>
+  <section class="content app-content">
+    <div class="slick-box">
+      <div><a href="images/haitao/haitao_home.jpeg" data-lightbox="roadtrip"><img src="images/haitao/haitao_home.jpeg" alt=""></a></div>
+      <div><a href="images/haitao/haitao1.jpeg" data-lightbox="roadtrip"><img src="images/haitao/haitao1.jpeg" alt=""></a></div>
+      <div><a href="images/haitao/haitao2.jpeg" data-lightbox="roadtrip"><img src="images/haitao/haitao2.jpeg" alt=""></a></div>
+      <div><a href="images/haitao/haitao3.jpeg" data-lightbox="roadtrip"><img src="images/haitao/haitao3.jpeg" alt=""></a></div>
+
+    </div>
+  </section>
+  <section class="module-card-pages module-card container ">
+    <div class="row experience">
+      <div class="detail">
+      <h4>项目网址</h4>
+      <div class="ex-detail">
+        <p><a href="http://120.25.147.228:9402/admin/index/login">http://120.25.147.228:9402/admin/index/login（需要账号密码）</a></p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>项目类型</h4>
+      <div class="ex-detail">
+        <p>PHP后台订单管理</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>主要负责模块</h4>
+      <div class="ex-detail">
+        <p>整个项目运行起来的把控，包括项目时间的计划，设计师设计产品逻辑把控及其中间与甲方的沟通，开发者开发的迭代把控及代码实现还原的把控</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="pages container">
+    <div class="clearfix">
+      <span class="left btn">< 上一页</span>
+      <span class="right btn">下一页 ></span>
+    </div>
+  </section> -->
+  <footer>
+     © Tinng | Good Good Study,Day Day Up 😝
+  </footer>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
+  <script type="text/javascript">
+    $('.more').on('click',function(){
+      $('.ex-hide').slideDown();
+      $('.more-hide').slideUp()
+    });
+
+    $('.slick-box').slick({
+      dots: true,
+      infinite: true,
+      speed: 1500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      adaptiveHeight: true
+    });
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel':   "%1 / %2",
+      fitImagesInViewport: true,
+      alwaysShowNavOnTouchDevices: true
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tinng</title>
+  <link  rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+</head>
+<body>
+    <div class="fix-pages">
+      <a href="index.html"><img src="images/icon/index.svg" alt=""> 首页</a>
+      <a href="linktion.html"><img src="images/icon/left.svg" alt=""> 上一页</a>
+      <!-- <a  href="gendi.html">下一页 <img src="images/icon/right.svg" alt=""></a> -->
+    </div>
+  <section class="header header-pages">
+    <div class="head-container">
+      <h1>世峰汽贸</h1>
+      <span class="line">
+      </span>
+      <p>2018.10</p>
+    </div>
+  </section>
+  <section class="content app-content">
+    <div class="slick-box">
+      <div><a href="images/shifeng/shifeng.jpeg" data-lightbox="roadtrip"><img src="images/shifeng/shifeng.jpeg" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng1.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng1.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_1.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_1.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_3.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_3.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_4.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_4.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_5.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_5.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_6.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_6.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_7.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_7.png" alt=""></a></div>
+      <div><a href="images/shifeng/shifeng_8.png" data-lightbox="roadtrip"><img src="images/shifeng/shifeng_8.png" alt=""></a></div>
+    </div>
+  </section>
+  <section class="module-card-pages module-card container ">
+    <div class="row experience">
+      <div class="detail">
+      <h4>项目网址</h4>
+      <div class="ex-detail">
+        <p>暂无链接</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>项目类型</h4>
+      <div class="ex-detail">
+        <p>微信小程序</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>项目简介</h4>
+      <div class="ex-detail">
+        <p>网站主要实现汽贸商城商品的买卖，加入购物车，订单管理，支付，授权登录，道路救援及签，收藏，推荐有奖，积分充值，意见反馈等功能</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>技术使用</h4>
+      <div class="ex-detail">
+        <p>小程序API，taro,taro-ui</p>
+      </div>
+    </div>
+    <div class="detail">
+      <h4>主要负责模块</h4>
+      <div class="ex-detail">
+        <p>独立负责小程序前台代码及项目搭建</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="pages container">
+    <div class="clearfix">
+      <span class="left btn">< 上一页</span>
+      <span class="right btn">下一页 ></span>
+    </div>
+  </section> -->
+  <footer>
+     © Tinng | Good Good Study,Day Day Up 😝
+  </footer>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
+  <script type="text/javascript">
+    $('.more').on('click',function(){
+      $('.ex-hide').slideDown();
+      $('.more-hide').slideUp()
+    });
+
+    $('.slick-box').slick({
+      dots: true,
+      infinite: true,
+      speed: 1500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      adaptiveHeight: true
+    });
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel':   "%1 / %2",
+      fitImagesInViewport: true,
+      alwaysShowNavOnTouchDevices: true
+    })
+  </script>
+</body>
+</html>
